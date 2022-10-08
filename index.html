@@ -11,12 +11,11 @@
     <div class="container">
         <h1>Weekly Profit and Loss Statement</h1>
                 <div id="FormData">
-                    <label class="month"><strong>Month:</strong></label> 
-                         <input type="text" placeholder="month:" class="m" value=""/>
-                         <label class="month"><strong>Week:</strong></label> 
-                         <input type="text" placeholder="Week Of:" class="m" value=""/>
-                         <label class="month"><strong>Year:</strong></label> 
-                         <input type="text" placeholder="Year:" class="m" value=""/>
+                   
+                    <div class="Week">
+                    <label class="month"><strong>Month/Week/Year:</strong></label>
+                         <input type="text" placeholder="Month/Week Of/ Year" class="m" value=""/>
+                        </div>
                    
 
 
@@ -37,7 +36,7 @@
                         <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="fp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
                         <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="gp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
 
-
+<br>
                     <div class="Trev">  
                         Total Revenue:&nbsp &nbsp  $
                     <output type="number" class="trev" id="trev" name="trev"></output>
@@ -46,6 +45,7 @@
             </form1>
 
                  <div class="col">
+                    
                     <h3>Loss</h3>
                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="a" name="qty" placeholder="Expense" value=""/>&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="b" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div> 
@@ -55,6 +55,7 @@
                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="f" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div> 
                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="g" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
                 
+                    <br>
                 <div class="Tloss">  
                         Total Loss:&nbsp &nbsp  $
                     <output type="number" class="tloss" id="tloss" name="tloss"></output>
@@ -62,6 +63,7 @@
             </div>
             </form2>
 
+            <br>
 <div class="row">
         <div class="Res">  
             Total Profit:&nbsp &nbsp  $
