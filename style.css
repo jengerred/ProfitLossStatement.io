@@ -16,7 +16,6 @@ h1 {
     font-size: 20px;
    margin-top: 150px;
     position: sticky;
-    
     float: left;
     display: flex;
     font-size: 20px;
@@ -30,8 +29,8 @@ h1 {
     margin-top: 150px;
     margin-left: 10px;
     float: left;
-display: flex;
-margin-right: 20px;
+    display: flex;
+    margin-right: 20px;
    
 }
 
@@ -61,7 +60,7 @@ margin-right: 20px;
 
  .Trev {
     margin-left: 20px;
-    margin-top: 10px;
+   
     font-size: 20px;
 }
  .trev {
@@ -89,7 +88,7 @@ margin-right: 20px;
  .row {
     margin: 20px;
     align-self: space-between 5px;
-    max-width: 75vw;
+    max-width: 70vw;
    
  }
  .col {
