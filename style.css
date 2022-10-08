@@ -1,0 +1,95 @@
+.container {
+    background-color: white;
+    max-width: 90vw;
+    height: 80vh;
+box-shadow: 0px 20px 20px black;
+}
+h1 {
+    margin-left: 20px;
+}
+
+.month {
+    align-self: left;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+
+}
+
+.m {
+    width: 100px;
+}
+
+
+ .Container {
+     margin-top: 20px;
+     margin-left: 20px;
+     height: 300px;
+ }
+.Res {
+    margin-left: 20px;
+    margin-top: 100px;
+    font-size: 20px;
+    position: absolute;
+    bottom:250px;
+    left: 30px;
+}
+ .res{
+   
+     color: rgb(73, 227, 73);
+     text-shadow: 1px 1px 0px black;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 40px;
+   
+ }
+
+ .Trev {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+ .trev {
+   
+     color: rgb(73, 227, 73);
+     text-shadow: 1px 1px 0px black;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 40px;
+ }
+ .Tloss {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+ .tloss {
+   
+     color: red;
+     text-shadow: 1px 1px 0px black;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 40px;
+    
+ }
+
+ .row {
+    margin: 20px;
+    align-self: space-between 5px;
+   
+ }
+ .col {
+    float: left;
+    width: 70vh;
+    padding: 20px;
+    height: 75vh;
+  }
+
+  .profit {
+    width: 80px;
+  }
+
+  .loss {
+    width: 80px;
+  }
+
+  .date {
+    width: 80px;
+  }

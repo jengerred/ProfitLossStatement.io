@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1>Weekly Profit and Loss Statement</h1>
+                <div id="FormData">
+                    <label class="month"><strong>Month:</strong></label> 
+                         <input type="text" placeholder="month:" class="m" value=""/>
+                         <label class="month"><strong>Week:</strong></label> 
+                         <input type="text" placeholder="Week Of:" class="m" value=""/>
+                         <label class="month"><strong>Year:</strong></label> 
+                         <input type="text" placeholder="Year:" class="m" value=""/>
+                   
+
+
+<form1 oninput="trev.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value));">
+    <form2 oninput="tloss.value=(-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">
+<form oninput="res.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value)-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));"> 
+
+                         
+              
+                    <div class="col">
+                        <h3>Profit</h3>
+                   
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="ap" name="qty" placeholder="Income" value=""/>&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="bp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class= "profit" type="number" id="cp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number" id="dp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="ep" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="fp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="gp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+
+
+                    <div class="Trev">  
+                        Total Revenue:&nbsp &nbsp  $
+                    <output type="number" class="trev" id="trev" name="trev"></output>
+                </div>
+            </div>
+            </form1>
+
+                 <div class="col">
+                    <h3>Loss</h3>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="a" name="qty" placeholder="Expense" value=""/>&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="b" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="c" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="d" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="e" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="f" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="g" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                
+                <div class="Tloss">  
+                        Total Loss:&nbsp &nbsp  $
+                    <output type="number" class="tloss" id="tloss" name="tloss"></output>
+                </div>
+            </div>
+            </form2>
+
+<div class="row">
+        <div class="Res">  
+            Total Profit:&nbsp &nbsp  $
+        <output type="number" class="res" id="res" name="res"></output>
+    </div>
+</div>
+</form>
+
+<script src="app.js"></script>
+
+</body>
+</html>
