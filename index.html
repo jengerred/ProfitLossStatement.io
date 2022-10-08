@@ -1,140 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css"/>
-   
-    <script src="https://kit.fontawesome.com/7c37acfebb.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-      <section class="hero">
-          <nav>
-               <div class="logo">Full Stack Developer</div>
-                <ul id="nav-List">
-                    
-                    <li><a href="https://jengerred.github.io/Portfolio.github.io/">Home</a></li>
-                    <li><a href="#About-Me">About Me</a></li>
-                    <li><a href="https://jengerred.github.io/PortfolioProjectsPage.io/">Projects</a></li>
-                    <li><a href="https://jengerred.github.io/Portfolio.github.io/Contact.html">Contact</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger">
-                    <i  class="fa-solid fa-bars"></i>
-                </button>
-          </nav>
-          <div class="hero-area">
-            <div class="hero-text">
-                <h1>Jen's Portfolio</h1>
-              </div>
-              <div class="socials">
-                  <a href="https://www.linkedin.com/in/jennifer-gerred-451230231/" alt="Jen's LinkedIn" class="social" target="_blank">
-                     <div><img src="linkedin-pngrepo-com (1).png" alt="Jen's github" height ="50px" width ="50px">
-                  </a>
-                </div> 
-                <div>
-                    <a href="https://github.com/jengerred" class="social" target="_blank">
-                     <img src="icons8-github-100.png" height="50px" width ="50px">
-                     </a>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1>Weekly Profit and Loss Statement</h1>
+                <div id="FormData">
+                   
+                    <div class="Week">
+                    <label class="month"><strong>Month/Week/Year:</strong></label>
+                         <input type="text" placeholder="Month/Week Of/ Year" class="m" value=""/>
+                        </div>
+                   
+
+
+<form1 oninput="trev.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value));">
+    <form2 oninput="tloss.value=(-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">
+<form oninput="res.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value)-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));"> 
+
+                         
+              
+                    <div class="col">
+                        <h3>Profit</h3>
+                   
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="ap" name="qty" placeholder="Income" value=""/>&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="bp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class= "profit" type="number" id="cp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number" id="dp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="ep" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="fp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="gp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+
+<br>
+                    <div class="Trev">  
+                        Total Revenue:&nbsp &nbsp  $
+                    <output type="number" class="trev" id="trev" name="trev"></output>
                 </div>
-              </div>
-          </div>
-          
-          <section class="sub-section-alternative" id="Projects"> 
-            <h2>Projects</h2>
-             <div class="project-container">
+            </div>
+            </form1>
+
+                 <div class="col">
                     
-                <div class="project-card">
-                    <a href="https://jengerred.github.io/DiceGame.io/" target="_blank">
-                    <img class="project-image" src="DiceGame.png" alt="My Dice Game image"></a>
-                    <h3>Dice Game</h3>
-                    <p class="subtext">This was a fun 2 player game project! Grab a friend and play. Be sure to read the rules of the game first. First to get 100 points wins!</p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://jengerred.github.io/DiceGame.io/" target="_blank">View Here</a></p>
-                </div>
+                    <h3>Loss</h3>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="a" name="qty" placeholder="Expense" value=""/>&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="b" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="c" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
+                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="d" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="e" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="f" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
+                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss"type="number" id="g" name="qty" placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
                 
-                <div class="project-card">
-                    <a href="https://jengerred.github.io/PacMan.io/" target="_blank">
-                    <img class="project-image" src="PacManGame.png" alt="PacMan Game"></a>
-                    <h3>PacMan Game</h3>
-                    <p class="subtext">This project was fun to test out. I can't wait to create more games, they are so much fun to create and see how my code is working!</p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="hhttps://jengerred.github.io/PacMan.io/" target="_blank">View Here</a></p>
+                    <br>
+                <div class="Tloss">  
+                        Total Loss:&nbsp &nbsp  $
+                    <output type="number" class="tloss" id="tloss" name="tloss"></output>
                 </div>
-            
-                <div class="project-card">
-                        <a href="https://jengerred.github.io/PracticeData/" target="_blank">
-                        <img class="project-image" src="Reports.png" alt="Console Reports image"></a>
-                        <h3>Console Reports</h3>
-                        <p class="subtext">This was the first time I worked with a lot of data and formulas to get averages and sums. I really enjoyed working with objects and arrays.</p>
-                        <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/PracticeData/" target="_blank">View Here</a></p>
-                    </div>
+            </div>
+            </form2>
 
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/ProfitLossStatement.io/" target="_blank">
-                        <img class="project-image" src="ProfitAndLoss.png" alt="Profit and Loss Statement image"></a>
-                        <h3>Profit and Loss Statement</h3>
-                        <p class="subtext">No tutorials needed for this project! This project was one I created for personal use. This is a great way to keep track of income, just print the results to use as needed.</p>
-                        <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/ProfitLossStatement.io/" target="_blank">View Here</a></p>
-                    </div>
+            <br>
+<div class="row">
+        <div class="Res">  
+            Total Profit:&nbsp &nbsp  $
+        <output type="number" class="res" id="res" name="res"></output>
+    </div>
+</div>
+</form>
 
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/Budget-App.github.io/" target="_blank">
-                        <img class="project-image" src="BudgetApp.png" alt="Budget App image"></a>
-                        <h3>Simple Budget App</h3>
-                        <p class="subtext">No tutorials needed for this project either! This was a great project for working with input, output and getting the sum result. This is very easy to use.</p>
-                        <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/Budget-App.github.io/" target="_blank">View Here</a></p>
-                    </div>
+<script src="app.js"></script>
 
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/MovingBalls.io/" target="_blank">
-                        <img class="project-image" src="MovingObjects.png"My First Webpage image"></a>
-                        <h3>Moving Objects #2</h3>
-                        <p class="subtext">This was a great project for working with moving objects. I also worked a lot with setTimeout and placing words at the right time.</p>
-                        <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/MovingBalls.io/" target="_blank">View Here</a></p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/FirstWebpage.github.io/" target="_blank">
-                        <img class="project-image" src="My First Webpage .png" alt="My First Webpage image"></a>
-                        <h3>My First Webpage</h3>
-                        <p class="subtext">This is my very first webpage ever! This was a really fun project. You can check out what there is to do in my hometown, Grand Rapids!</p>
-                        <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/FirstWebpage.github.io/" target="_blank">View Here</a></p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/Tetris-Basic.github.io/" target="_blank">
-                            <img class="project-image" src="Tetris.png" alt="Basic Tetris"></a>
-                            <h3>Basic Tetris</h3>
-                            <p class="subtext">This was another fun project!  Go ahead and try it for yourself. Try to be careful not to play for too long. This game can be very addicting!</p>
-                            <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/Tetris-Basic.github.io/" target="_blank">View Here</a></p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/PacMan.github.io/" target="_blank">
-                            <img class="project-image" src="PacMan.png" alt="Pac Man"></a>
-                            <h3>PacMan</h3>
-                <p class="subtext">Watch the PacMan chomp across the screen! I will be adding to this slowly. I hope to have a fully functiioning PacMan game here soon!</p>
-                <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/PacMan.github.io/" target="_blank">View Here</a></p>
-                    </div>
-
-                    <div class="project-card">
-                        <a href="https://jengerred.github.io/MovingObjects.github.io/" target="_blank">
-                            <img class="project-image" src="Moving Objects.png" alt="Pac Man"></a>
-                            <h3>Moving Objects</h3>
-                            <p class="subtext">I can move objects! I created circles, put them in place and then had them move around. This was a fun learning experience!</p>
-                            <hr/>
-                        <p class="subtext"><a class="project-link" href="https://jengerred.github.io/MovingObjects.github.io/" target="_blank">View Here</a></p>
-                    </div>
-                </div>
-        </section>
-        </footer>
-        <script src ="app.js"></script>
-    </body>
+</body>
 </html>
