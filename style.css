@@ -163,12 +163,12 @@ hr {
     padding-bottom: 20px;
     margin-bottom: 40px;
     text-align:center;
-    border: solid black 2px;
+    border-radius: 50px;
     display: grid;
     grid-auto-flow: column;
     gap: 4px;
     align-items: top;
-    box-shadow: 0px 20px 20px black;
+    box-shadow:  0px -5px 20px 10px rgb(185, 201, 210);
 }
 p {
     font-size:larger;
