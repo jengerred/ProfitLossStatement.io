@@ -1,12 +1,19 @@
 .container {
-    background-color: white;
-    max-width: 90vw;
+    background-color: rgba(233, 233, 168, 0.7);
+    min-width: 100%;
     height: 95vh;
 box-shadow: 0px 20px 20px black;
 float: left;
-display: flex;
+display: grid;
 overflow: scroll;
 }
+.wrapper {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+      }
 h1 {
     margin-left: 20px;
    position:fixed;
@@ -14,7 +21,7 @@ h1 {
 
 .month {
     font-size: 20px;
-   margin-top: 150px;
+   margin-top: 75px;
     position: sticky;
     float: left;
     display: flex;
@@ -26,7 +33,7 @@ h1 {
 .m {
     width: 300px;
     position: sticky;
-    margin-top: 150px;
+    margin-top: 75px;
     margin-left: 10px;
     float: left;
     display: flex;
@@ -34,19 +41,14 @@ h1 {
    
 }
 
-.Res {
-    float: left;
-    max-width: 70vh;
-    padding: 20px;
-    height: 75vh;
-    display: flex;
-    flex-direction: left;
-    justify-content: space-around;
-    margin-top: 150px;
+ .Res {
+    position: relative;
     font-size: 30px;
-    
-    
+    justify-content: space-around;
+    height: 75vh;
+    padding: 25px;
 }
+    
  .res{
    
      color: rgb(73, 227, 73);
@@ -60,7 +62,6 @@ h1 {
 
  .Trev {
     margin-left: 20px;
-   
     font-size: 20px;
 }
  .trev {
@@ -72,7 +73,7 @@ h1 {
  }
  .Tloss {
     margin-left: 20px;
-    margin-bottom: 120px;
+    
     font-size: 20px;
     
 }
@@ -87,22 +88,18 @@ h1 {
 
  .row {
     margin: 20px;
-    align-self: space-between 5px;
+    justify-self: center;
+    
     max-width: 70vw;
    
  }
  .col {
-    float: left;
-    max-width: 70vh;
+    display: grid;
+    min-width: 50vh;
     padding: 20px;
     height: 75vh;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    margin-top: 150px;
-    display: grid;
-    
-    
+  
    
   }
 
@@ -122,7 +119,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     float: left;
-    max-width: 70vh;
+   max-width: 90vw;
     margin-left: 20px;
   }
 

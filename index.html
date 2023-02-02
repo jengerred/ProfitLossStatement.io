@@ -23,8 +23,9 @@
     <form2 oninput="tloss.value=(-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">
 <form oninput="res.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value)-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));"> 
 
-                         
-              
+                
+
+              <section class="wrapper">
                     <div class="col">
                         <h3>Profit</h3>
                    
@@ -43,7 +44,7 @@
                 </div>
             </div>
             </form1>
-
+<br>
                  <div class="col">
                     
                     <h3>Loss</h3>
@@ -62,15 +63,17 @@
                 </div>
             </div>
             </form2>
-
             <br>
-<div class="row">
-        <div class="Res">  
-            Total Profit:&nbsp &nbsp  $
-        <output type="number" class="res" id="res" name="res"></output>
-    </div>
-</div>
+            <div class="col">
+                <div class="Res">
+                       Total Profit:&nbsp &nbsp  $
+                   <output type="number" class="res" id="res" name="res"></output>
+               </div>
+           </div>
+           
+
 </form>
+</section>
 
 <script src="app.js"></script>
 
