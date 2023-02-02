@@ -6,74 +6,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    
     <div class="container">
+        <div class="header">
         <h1>Weekly Profit and Loss Statement</h1>
+        <br><br>
+    </div>
+    
                 <div id="FormData">
                    
+                  
                     <div class="Week">
-                    <label class="month"><strong>Month/Week/Year:</strong></label>
+                    <label class="month"><strong>Date:</strong></label>
                          <input type="text" placeholder="Month/Week Of/ Year" class="m" value=""/>
                         </div>
-                   
 
+                        <form oninput="res.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value)-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">   
+                       
 
-<form1 oninput="trev.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value));">
-    <form2 oninput="tloss.value=(-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">
-<form oninput="res.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value)-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));"> 
-
-                
+    <div class="row-res">
+        <div class="Res">
+               Total Profit:&nbsp &nbsp  $
+           <output type="number" class="res" id="res" name="res"></output>
+       </div>
+    </div>
+    
 
               <section class="wrapper">
+              
+               
+                <form1 oninput="trev.value=(BigInt(ap.value)+BigInt(bp.value)+BigInt(cp.value)+BigInt(dp.value)+BigInt(ep.value)+BigInt(fp.value)+BigInt(gp.value));">
                     <div class="col">
                         <h3>Profit</h3>
                    
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="ap" name="qty" placeholder="Income" value=""/>&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="bp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class= "profit" type="number" id="cp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number" id="dp" name="qty"  placeholder="Income" value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="ep" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="fp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
-                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit"type="number" id="gp" name="qty" placeholder="Income"  value="">&nbsp &nbsp<input class="profit" type="text" placeholder="Source" value=""/></div>
+                        <div class="row">
+                            <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="ap" name="qty" placeholder="Income" value=""/>
+                            <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
 
-<br>
-                    <div class="Trev">  
-                        Total Revenue:&nbsp &nbsp  $
-                    <output type="number" class="trev" id="trev" name="trev"></output>
-                </div>
+                            <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="bp" name="qty" placeholder="Income" value=""/>
+                                <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="cp" name="qty" placeholder="Income" value=""/>
+                                    <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="dp" name="qty" placeholder="Income" value=""/>
+                                        <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                        <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="ep" name="qty" placeholder="Income" value=""/>
+                                            <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                            <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="fp" name="qty" placeholder="Income" value=""/>
+                                                <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                                <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="profit" type="number"  id="gp" name="qty" placeholder="Income" value=""/>
+                                                    <br><input class="boxes" type="text" placeholder="Source" value=""/>&nbsp &nbsp<br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                 
+                                                    <div class="Trev">  
+                                                        Total Revenue:&nbsp &nbsp  $
+                                                    <output type="number" class="trev" id="trev" name="trev"></output>
+                                                </div>
+                                            
             </div>
-            </form1>
-<br>
+            <br><br> <br><br> <br><br> <br><br> <br><br>  <br><br> <br><br> <br><br> <br><br> <br><br>      <br><br> <br><br> <br><br> <br><br> <br><br>  <br><br> <br><br> <br><br> <br><br> <br><br>
+        </form1>
+         <br>
+        
+           <form2 oninput="tloss.value=(-BigInt(a.value)-BigInt(b.value)-BigInt(c.value)-BigInt(d.value)-BigInt(e.value)-BigInt(f.value)-BigInt(g.value));">
+
                  <div class="col">
-                    
                     <h3>Loss</h3>
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="a" name="qty" placeholder="Expense" value=""/>&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="b" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="c" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
-                     <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="d" name="qty"  placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="e" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number" id="f" name="qty" placeholder="Expense"   value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div> 
-                    <div class="row"><input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss"type="number" id="g" name="qty" placeholder="Expense"  value="">&nbsp &nbsp<input class="loss" type="text" placeholder="Source" value=""/></div>
-                
-                    <br>
-                <div class="Tloss">  
-                        Total Loss:&nbsp &nbsp  $
-                    <output type="number" class="tloss" id="tloss" name="tloss"></output>
-                </div>
-            </div>
-            </form2>
-            <br>
-            <div class="col">
-                <div class="Res">
-                       Total Profit:&nbsp &nbsp  $
-                   <output type="number" class="res" id="res" name="res"></output>
-               </div>
-           </div>
-           
+                    <div class="row">
+                        <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="a" name="qty" placeholder="Expense" value=""/>
+                        <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
 
+                        <div class="row">
+                            <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="b" name="qty" placeholder="Expense" value=""/>
+                            <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                            <div class="row">
+                            <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="c" name="qty" placeholder="Expense" value=""/>
+                            <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                            <div class="row">
+                            <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="d" name="qty" placeholder="Expense" value=""/>
+                            <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                            <div class="row">
+                            <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="e" name="qty" placeholder="Expense" value=""/>
+                            <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                            <div class="row">
+                                <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="f" name="qty" placeholder="Expense" value=""/>
+                                <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+
+                                <div class="row">
+                                <input class="date"  placeholder="Date" value=""/>&nbsp &nbsp<input class="loss" type="number"  id="g" name="qty" placeholder="Expense" value=""/>
+                                <br><input class="boxes" type="text" placeholder="Source" value=""/><br><input class="boxes"type="text" placeholder="comments" value=""/></div><hr>
+                          
+                                <div class="Tloss">  
+                                Total Loss:&nbsp &nbsp  $
+                                <output type="number" class="tloss" id="tloss" name="tloss"></output>
+                                <br> <br> <br> <br> <br> <br>
+                            </div>
+                        </div>
+                </form2>    
+                <br>            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
+                
+                <div class="col-3">
+
+                    <ul>
+                        <p class="options">There will be more options soon:</p>
+
+                        <li>Save</li>
+                        <li>Add an input box</li>
+                        <li>Delete an input box</li>
+                      
+                        <p>Pages:</p>
+                        <li>Contacts</li>
+                        <li>Calendar</li>
+                        <li>Year to Date</li>
+                        <li>Month</li>
+                        <li>Week</li>
+                        <li>Day</li>
+                    </ul>
+                </div>
+                </section>
 </form>
-</section>
+
 
 <script src="app.js"></script>
 

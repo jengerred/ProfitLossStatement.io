@@ -1,11 +1,12 @@
 .container {
-    background-color: rgba(233, 233, 168, 0.7);
+    background-color: azure;
     min-width: 100%;
-    height: 95vh;
 box-shadow: 0px 20px 20px black;
 float: left;
 display: grid;
 overflow: scroll;
+height: 95vh;
+
 }
 .wrapper {
     position: relative;
@@ -14,9 +15,18 @@ overflow: scroll;
     grid-template-columns:  repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
       }
+
+.header {
+height:fit-content;
+background-color: rgba(210, 227, 237, 0.7);
+margin: 20px;
+border-radius: 50px;
+      }
+
 h1 {
-    margin-left: 20px;
-   position:fixed;
+   padding-top: 30px;
+   padding-left: 2vw;
+   
 }
 
 .month {
@@ -26,6 +36,7 @@ h1 {
     float: left;
     display: flex;
     font-size: 20px;
+    padding-left: 2vw;
     
 
 }
@@ -40,13 +51,16 @@ h1 {
     margin-right: 20px;
    
 }
+.row-res {
+    margin: 20px;
+    justify-self: center;
+}
 
  .Res {
-    position: relative;
+
     font-size: 30px;
-    justify-content: space-around;
-    height: 75vh;
-    padding: 25px;
+    height: 5vh;
+    
 }
     
  .res{
@@ -56,8 +70,6 @@ h1 {
      font-family: 'Courier New', Courier, monospace;
      font-size: 40px;
     
-     
-   
  }
 
  .Trev {
@@ -73,12 +85,9 @@ h1 {
  }
  .Tloss {
     margin-left: 20px;
-    
     font-size: 20px;
-    
 }
  .tloss {
-   
      color: red;
      text-shadow: 1px 1px 0px black;
      font-family: 'Courier New', Courier, monospace;
@@ -89,7 +98,6 @@ h1 {
  .row {
     margin: 20px;
     justify-self: center;
-    
     max-width: 70vw;
    
  }
@@ -99,19 +107,36 @@ h1 {
     padding: 20px;
     height: 75vh;
     justify-content: space-around;
-  
-   
   }
 
-  .profit {
+  .boxes {
     width: 80px;
+    margin: 5px;
+  }
+  .profit {
+    margin: 5px;
+    width: 80px;
+    padding: 1px;
+    border: green;
+    box-shadow: 0px 2px 2px green;
+    border-style: ridge;
   }
 
   .loss {
+    margin: 5px;
     width: 80px;
+    padding: 1px;
+    border: green;
+    box-shadow: 0px 2px 2px red;
+    border-style: ridge;
   }
   .date {
       width: 80px;
+      margin-left: 5px;
+      padding: 1px;
+      border-style: ridge;
+      box-shadow: 0px 2px 2px black;
+    
   }
 
   .Week {
@@ -122,9 +147,36 @@ h1 {
    max-width: 90vw;
     margin-left: 20px;
   }
+  h3 {
+    padding-top: 50px;
+ 
+  }
 
-
-
+hr {
+    color: black;
+    height: 2px;
+    width: 100%;
+}
+.col-3 {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    text-align:center;
+    border: solid black 2px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: top;
+    box-shadow: 0px 20px 20px black;
+}
+p {
+    font-size:larger;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
 
 
 
